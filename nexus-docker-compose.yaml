@@ -6,7 +6,7 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - ./jenkins:/var/jenkins_home:rw
+      - ./var/jenkins_home:rw
       - /run/docker.sock:/var/run/docker.sock
       - /usr/bin/docker:/usr/bin/docker
       - ./war:/mnt/:rw
